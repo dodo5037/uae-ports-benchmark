@@ -1,12 +1,10 @@
-# Step 1: the question, the ports, the figures
+# The question, the ports, the figures
 
-*Draft for Abderrahmane to check, 2026-11-13. Nothing is published yet.*
-
-## The question (proposed)
+## The question
 
 > **In 2024 Jebel Ali handled its highest container volume since 2015, yet its World Bank port-performance score fell further than almost any other Gulf port. Where did ship time go, and what should a terminal operator look at first?**
 
-Why this one: it is a real question about DP World's home port, it has a clear number behind it, and it connects to what you already know (queues grow fast when a system runs near capacity: your P1 finding).
+Why this one: it is a real question about DP World's home port with a clear number behind it, and it connects to queueing: waiting grows fast when a system runs near capacity.
 
 ## The data
 
@@ -16,7 +14,7 @@ Why this one: it is a real question about DP World's home port, it has a clear n
 | 2 | DP World press release, 19 Feb 2025, "DP World records highest cargo volumes at Jebel Ali Port since 2015" (dpworld.com) | Jebel Ali 2024: 15.5 million TEU, up 1 million on 2023; capacity 19.4 million TEU a year; achieved "despite challenges like the Red Sea crisis" | Read on dpworld.com |
 | 3 | AD Ports Group 2024 annual report (Khalifa Port volume and capacity) | **Not used.** The report's link on adportsgroup.com no longer returns the PDF, and news summaries disagree on the capacity increase (23% vs 33%). No Khalifa Port volume or capacity figure appears in this project | Dropped 2026-11-13 |
 
-## What the index is (you must be able to say this)
+## What the index is
 
 - It measures **how long container ships spend in port**: arrival hours (waiting at anchor + sailing in) plus berth hours. Report p. 49.
 - Time is compared with the average for ships of the **same size and same number of container moves**, so a big hub is not punished for handling big ships. p. 49.
@@ -57,15 +55,8 @@ All 12 ports in the World Bank's "Arabian Gulf" maritime region. File: `data/pro
 
 **What we cannot claim:** that volume caused the fall. The index does not give causes, we have no hourly data, and Hamad Port held its score through the same crisis.
 
-## Things worth knowing before an interviewer tells you
+## Things worth knowing
 
-- Several news sites reported Jebel Ali as "26th" in this index. The World Bank's own annex says **262nd**. Your deck uses the annex.
+- Several news sites reported Jebel Ali as "26th" in this index. The World Bank's own annex says **262nd**. This project uses the annex.
 - Khor Fakkan and Fujairah are not in the index, so "UAE" here means Jebel Ali, Khalifa Port and Sharjah only.
 - The licence is non-commercial with attribution. A student portfolio is fine; every chart must cite the World Bank.
-- A DP World interviewer may not enjoy the headline. The deck must be fair: it says the cause is not proven, shows the Red Sea context, and ends with what to check next, not blame.
-
-## Your decisions
-
-1. Is the question right, or do you want a different angle?
-2. All 12 Gulf ports, or a shorter list?
-3. Who makes the 3 charts: me in Python (fast, consistent), or you in Excel from the CSV (slower, but it is Excel-by-hand practice)?
