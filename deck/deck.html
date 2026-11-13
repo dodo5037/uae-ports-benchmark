@@ -1,0 +1,88 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>UAE ports benchmark</title>
+<style>
+@page { size: 13.333in 7.5in; margin: 0 }
+* { box-sizing: border-box }
+body { margin: 0; font-family: Helvetica, Arial, sans-serif; color: #0b0b0b; background: #fcfcfb }
+.slide { width: 13.333in; height: 7.5in; padding: 0.55in 0.7in 0.45in; page-break-after: always; position: relative; background: #fcfcfb }
+.slide:last-child { page-break-after: auto }
+h1 { font-size: 27pt; line-height: 1.18; margin: 0 0 0.22in; max-width: 11.6in; font-weight: 700 }
+.kicker { font-size: 10.5pt; letter-spacing: .08em; text-transform: uppercase; color: #2a78d6; font-weight: 700; margin-bottom: 0.1in }
+.body { display: flex; gap: 0.45in; align-items: flex-start }
+.chart { flex: 0 0 7.9in } .chart img { width: 7.9in; border: 1px solid #e4e3de }
+.notes { flex: 1; font-size: 14pt; line-height: 1.38 } .notes p { margin: 0 0 0.16in }
+ul { margin: 0; padding-left: 0.26in } li { margin-bottom: 0.15in; font-size: 15.5pt; line-height: 1.36 }
+.cols { display: flex; gap: 0.6in } .cols > div { flex: 1 } h2 { font-size: 15pt; margin: 0 0 0.14in; color: #2a78d6 }
+.big li { font-size: 17pt; margin-bottom: 0.22in }
+.foot { position: absolute; left: 0.7in; right: 0.7in; bottom: 0.3in; font-size: 8.5pt; color: #52514e; display: flex; justify-content: space-between; border-top: 1px solid #e4e3de; padding-top: 0.08in }
+b.n { color: #0b0b0b } .muted { color: #52514e }
+</style></head><body>
+
+<section class="slide">
+  <div class="kicker">Gulf container ports, 2020 to 2024 · the answer</div>
+  <h1>Jebel Ali's port-performance score fell 80 points in its busiest year since 2015; the first place to look is ship time before berth</h1>
+  <ul class="big">
+    <li><b>What happened.</b> On the World Bank index of ship time in port, Jebel Ali went from 73 to -7 (rank 262 of 403) and Khalifa Port from 105 to 46 (rank 68) between 2023 and 2024.</li>
+    <li><b>It is not only the Red Sea.</b> The median port lost 2 points. Hamad Port and Sohar lost 3. Singapore handled a record volume and kept a score of 88.</li>
+    <li><b>Where to look.</b> A third of a ship's port time at Jebel Ali, and two-fifths at Khalifa Port, passes before the ship is tied up, against a fifth at a typical port. Jebel Ali ran at about 80% of its stated capacity.</li>
+    <li><b>What to do.</b> Measure waiting-for-berth per ship call, week by week, before deciding between scheduling fixes and new capacity. This analysis shows where to look; it does not prove the cause.</li>
+  </ul>
+  <div class="foot"><span>Sources: World Bank (2025), Container Port Performance Index 2020 to 2024, annex and pp. 37, 63, 64; DP World release, 19 Feb 2025.</span><span>Abderrahmane Messaoudi · 1</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">What happened</div>
+  <h1>Both UAE hubs lost ground in 2024: Jebel Ali fell from 73 to -7 and Khalifa Port from 105 to 46</h1>
+  <div class="body"><div class="chart"><img src="../outputs/charts/01_score_by_year.png"></div>
+  <div class="notes">
+    <p>The index measures how long container ships spend in port, compared with ships of the same size and workload. <b>0 is the 2024 world average; higher is better.</b></p>
+    <p>Jebel Ali: rank <b>262</b> of 403 in 2024. Khalifa Port: rank <b>68</b>.</p>
+    <p>Hamad Port (125) and Salalah (117) stayed in the world's top 15.</p>
+    <p class="muted">All five years are measured against the 2024 baseline, so the lines can be compared across years (report p. 53).</p>
+  </div></div>
+  <div class="foot"><span>Source: World Bank (2025), CPPI 2020 to 2024, data annex; printed table pp. 63-64. CC BY-NC 3.0 IGO.</span><span>2</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Is it just the Red Sea?</div>
+  <h1>The Red Sea year cost the median port 2 points; Jebel Ali lost 80 and Khalifa Port 59</h1>
+  <div class="body"><div class="chart"><img src="../outputs/charts/02_change_2023_2024.png"></div>
+  <div class="notes">
+    <p>214 of the 387 ports scored in both years got worse. Only <b>21</b> fell further than Jebel Ali.</p>
+    <p>Neighbours in the same waters barely moved: Hamad Port -3, Sohar -3.</p>
+    <p>Singapore, also a transshipment hub, handled a record 40 million TEU in 2024 and kept a score of 88, rank 29 (report p. 37).</p>
+    <p class="muted">So the crisis explains a fall, but not one of this size. Dammam (-88) shows the UAE hubs were not alone.</p>
+  </div></div>
+  <div class="foot"><span>Source: World Bank (2025), CPPI 2020 to 2024, data annex and p. 37. Median and counts are my calculations from the annex.</span><span>3</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Where to look first</div>
+  <h1>A third of ship time at Jebel Ali passes before the ship is tied up, against a fifth at a typical port</h1>
+  <div class="body"><div class="chart"><img src="../outputs/charts/03_time_before_berth.png"></div>
+  <div class="notes">
+    <p>Time before berth is waiting at anchor plus sailing in. Khalifa Port <b>41%</b>, Jebel Ali <b>33%</b>, median of 403 ports <b>21%</b>.</p>
+    <p>Jebel Ali handled 15.5 million TEU against 19.4 million of stated capacity: about <b>80%</b>, in a year when diverted ships arrived off schedule.</p>
+    <p>Queues grow fast when a busy system gets irregular arrivals. That is a reason to check berth waiting first.</p>
+    <p class="muted">Caution: this is a ratio. A port that unloads fast also shows a high share: Salalah is at 36% and ranks 15th.</p>
+  </div></div>
+  <div class="foot"><span>Sources: World Bank (2025), CPPI annex ("Berth hours in % of port hours"); DP World release, 19 Feb 2025. Utilisation is my division of DP World's two figures.</span><span>4</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">What to do next</div>
+  <h1>Before choosing between scheduling fixes and new capacity, measure waiting-for-berth per call and test whether it rose with volume</h1>
+  <div class="cols">
+    <div><h2>Next steps for a terminal operator</h2><ul>
+      <li><b>Get the per-call data:</b> hours at anchor, hours at berth and arrival against schedule, by week, for 2023 and 2024.</li>
+      <li><b>Test the queueing explanation:</b> did waiting rise in the weeks with the most volume or the most off-schedule arrivals?</li>
+      <li><b>If yes, start with scheduling:</b> agreed berthing times shared with carriers, as Singapore used in 2024 (p. 37), and berth windows (p. 35). Capacity comes second.</li>
+    </ul></div>
+    <div><h2>What this analysis cannot tell you</h2><ul>
+      <li><b>No causes.</b> The index reports time in port, not why (report p. 52).</li>
+      <li><b>No hours.</b> Scores and one ratio per port per year; nothing per ship or per week.</li>
+      <li><b>One provider, three UAE ports.</b> Data from S&amp;P Global via the World Bank; Khor Fakkan and Fujairah are not in the index.</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>Source: World Bank (2025), CPPI 2020 to 2024, pp. 35, 37, 52.</span><span>5</span></div>
+</section>
+</body></html>

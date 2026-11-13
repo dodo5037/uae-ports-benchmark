@@ -2,7 +2,9 @@
 
 **Question:** in 2024 Jebel Ali handled its highest container volume since 2015, yet its World Bank port-performance score fell further than almost any other Gulf port. Where did ship time go, and what should a terminal operator look at first?
 
-**Status:** data and charts done; the 5-slide recommendation deck is in progress.
+**Answer:** both UAE container hubs lost more ground in 2024 than the Red Sea crisis alone explains, and at both an unusually large share of ship time passes before the ship reaches its berth. Before choosing between scheduling fixes and new capacity, a terminal operator should measure waiting-for-berth per ship call. The data shows where to look; it does not prove the cause.
+
+**Read it in 2 minutes:** [5-slide deck (PDF)](outputs/deck/uae_ports_deck.pdf) · [one-page summary (PDF)](outputs/summary/one_page_summary.pdf)
 
 ![Score by year](outputs/charts/01_score_by_year.png)
 
@@ -35,6 +37,12 @@ All 12 ports of the World Bank's "Arabian Gulf" region: `data/processed/gulf_por
 ![Change](outputs/charts/02_change_2023_2024.png)
 ![Time before berth](outputs/charts/03_time_before_berth.png)
 
+## Recommendation
+
+1. Collect per-call data for 2023 and 2024: hours at anchor, hours at berth and arrival against schedule, by week.
+2. Test whether waiting rose in the weeks with the most volume or the most off-schedule arrivals.
+3. If it did, start with scheduling: agreed berthing times shared with carriers, which Singapore used in 2024 while handling a record 40 million TEU and keeping a score of 88 (report p. 37), and berth windows (p. 35). Capacity comes second.
+
 ## Limits
 
 - The index does not give causes (report p. 52). The fall coincides with record volume and with Red Sea diversions that made ship arrivals less predictable (p. xiv, p. 37); this project does not prove either caused it. Hamad Port held its score through the same year.
@@ -50,6 +58,8 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python src/extract_gulf.py && python src/charts.py
 ```
+
+The deck and summary are HTML (`deck/`) printed to PDF with headless Chrome.
 
 `data/raw/worldbank/` holds the annex as published. The report PDF is not redistributed here: https://openknowledge.worldbank.org/entities/publication/fa57ba78-0402-4eb4-b168-51708cf526f7
 
